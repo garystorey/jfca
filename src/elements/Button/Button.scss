@@ -1,0 +1,17 @@
+.button {
+    &-primary {
+        background-color: var(--c-primary);
+        color: var(--c-light);
+    }
+    &-secondary {
+        background-color: var(--c-primary);
+        color: var(--c-light);
+    }
+    &-ghost {
+        background-color: var(--c-primary);
+        color: var(--c-light);
+    }
+    &-unstyled {
+        all:unset;
+    }
+}

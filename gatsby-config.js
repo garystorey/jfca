@@ -1,12 +1,12 @@
 module.exports = {
   plugins: [
-    {
-      resolve: "gatsby-source-shopify",
-      options: {
-        shopName: "junkfood.shopify.com",
-        accessToken: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-shopify",
+    //   options: {
+    //     shopName: "junkfood.shopify.com",
+    //     accessToken: "",
+    //   },
+    // },
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-plugin-sitemap",
@@ -34,5 +34,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "./src/posts/",
+      },
+      __key: "posts",
+    }
   ],
 };
