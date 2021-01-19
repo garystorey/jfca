@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
     <Auth0Provider
       domain={process.env.GATSBY_AUTH0_DOMAIN}
       clientId={process.env.GATSBY_AUTH0_CLIENT_ID}
-      redirectUri={`https://jfca.netlify.com`}
+      redirectUri={`https://jfca.netlify.app`}
       audience={process.env.GATSBY_AUTH0_AUDIENCE}
       scope={process.env.GATSBY_AUTH0_SCOPE}
     >
