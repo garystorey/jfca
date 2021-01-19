@@ -1,3 +1,38 @@
+:root {
+    --cl-primary: $lighten(#233fbb,20);
+    --c-primary: #233fbb;
+    --cd-primary: $darken( #233fbb,20);
+    --c-secondary: #e4cf16;
+    --c-light: #ddd;
+    --c-nuetral: #aaa;
+    --c-dark: #444;
+    --c-black: #000;
+    --c-white: #fff;
+
+    --p1: .25rem;
+    --p2: .5rem;
+    --p3: .75rem;
+    --p4: 1rem;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--c-black);
+    color: var(--c-light);
+}
+
+a {
+    color: var(--c-light);
+}
+
 header {
     display: flex;
     justify-content:space-around;

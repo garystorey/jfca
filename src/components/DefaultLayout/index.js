@@ -6,11 +6,11 @@ import "./default.scss";
 export const Layout = ({ children }) => {
   return (
     <Auth0Provider
-      domain="dev-oekrcomv.us.auth0.com"
-      clientId="sVEWSZPdgBxdlHqLYeuMJTKH3a8zWydR"
+      domain={process.env.GATSBY_AUTH0_DOMAIN}
+      clientId={process.env.GATSBY_AUTH0_CLIENT_ID}
       redirectUri={window.location.origin}
-      audience="https://dev-oekrcomv.us.auth0.com/api/v2/"
-      scope="read:current_user"
+      audience={process.env.GATSBY_AUTH0_AUDIENCE}
+      scope={process.env.GATSBY_AUTH0_SCOPE}
     >
       <header>
           <NavBar />

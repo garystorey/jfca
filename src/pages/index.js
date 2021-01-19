@@ -1,12 +1,10 @@
 import * as React from "react";
-import {Layout} from '../components/DefaultLayout';
+import { useAuth0 } from "@auth0/auth0-react";
+import { Layout, Profile } from "../components";
 
 const IndexPage = () => {
-  return (
-    <Layout>
-      Content here
-    </Layout>
-  )
-}
+  const { user } = useAuth0();
+  return <Layout>{user ? <Profile user={user} /> : null}</Layout>;
+};
 
-export default IndexPage
+export default IndexPage;

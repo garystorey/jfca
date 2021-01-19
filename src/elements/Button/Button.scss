@@ -1,15 +1,18 @@
 .button {
+    padding: var(--p1) var(--p4);
     &-primary {
         background-color: var(--c-primary);
         color: var(--c-light);
+        border: 1px solid var(--cd-primary)
     }
     &-secondary {
-        background-color: var(--c-primary);
+        background-color: var(--c-secondary);
         color: var(--c-light);
+        border: 1px solid var(--c-nuetral)
     }
     &-ghost {
-        background-color: var(--c-primary);
-        color: var(--c-light);
+        background-color: transparent;
+        border: 1px solid var(--c-nuetral)
     }
     &-unstyled {
         all:unset;
