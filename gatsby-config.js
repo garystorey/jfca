@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://jfca.netlify.com'
+  },
   plugins: [
     // {
     //   resolve: "gatsby-source-shopify",
