@@ -1,8 +1,6 @@
 .profile {
-    border: 1px solid #ddd;
-    background-color: #eee;
-    padding: 1rem;
-    margin: 1rem auto;
+    padding: var(--p4);
+    margin: var(--p4) auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,11 +8,12 @@
   }
   .profile img {
     outline: 2px solid #eee;
-    outline-offset: -0.5rem;
-    border: 1.2rem solid #333;
+    outline-offset: calc(var(--p2) * -1);
+    border: 1.2rem solid var(--c-dark);
     border-radius: 5px;
   }
   .profile h2 {
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--p2);
+    color: var(--c-light);
   }
