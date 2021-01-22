@@ -32,11 +32,7 @@ export const NavBar = () => {
             )}
           </li>
           <li>
-            {user ? (
-              <Profile user={user} />
-            ) : (
-              <img src="https://via.placeholder.com/100" alt="no user" />
-            )}
+          <Profile user={user} loggedIn={isAuthenticated}/>
           </li>
         </ul>
       </nav>
