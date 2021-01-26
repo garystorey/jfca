@@ -1,11 +1,14 @@
-import React from 'react';
-import './profile.scss';
+import React from 'react'
+import {useAuth0} from '@auth0/auth0-react'
+import './profile.scss'
 
-export const Profile = ({user, loggedIn}) => {
-    return loggedIn && (
+export const Profile = () => {
+  const {isAuthenticated,user} = useAuth0();
+
+    return isAuthenticated ? (
     <div className="profile">
       <img src={user.picture} alt={user.name} />
       <h2>{user.name}</h2>
     </div>
-    )
+    ) : null;
 }
