@@ -2,10 +2,9 @@ import React from "react"
 import { useAuth0 } from "@auth0/auth0-react"
 import { Link } from "gatsby"
 import { Button } from "../../elements"
-import {Profile} from '../Profile'
 
 export const NavBar = () => {
-  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0()
+  const { loginWithRedirect, isAuthenticated, logout } = useAuth0()
   return (
     <>
       <h1>Junkfood Custom Arcade</h1>
@@ -29,13 +28,6 @@ export const NavBar = () => {
               <Button as="primary" onClick={() => loginWithRedirect()}>
                 Login
               </Button>
-            )}
-          </li>
-          <li>
-            {user ? (
-              <Profile user={user} />
-            ) : (
-              <img src="https://via.placeholder.com/100" alt="no user" />
             )}
           </li>
         </ul>
